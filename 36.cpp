@@ -19,11 +19,12 @@ public:
                 numbers[i]=false;
             }
             for (int j=0;j<9;j++){
-                if(board[i][j]!='.'){
-                    if(board[i][j]>'9'||board[i][j]<'1'||numbers[board[i][j]]==true){
+                char t=board[i][j];
+                if(t!='.'){
+                    if(t>'9'||t<'1'||numbers[t]==true){
                         return false;
                     }
-                    numbers[board[i][j]]=true;
+                    numbers[t]=true;
                 }
                 
             }
@@ -32,11 +33,12 @@ public:
                 numbers[i]=false;
             }
             for (int j=0;j<9;j++){
-                if(board[j][i]!='.'){
-                    if(board[j][i]>'9'||board[j][i]<'1'||numbers[board[j][i]]==true){
+                char t=board[j][i];
+                if(t!='.'){
+                    if(t>'9'||t<'1'||numbers[t]==true){
                         return false;
                     }
-                    numbers[board[j][i]]=true;
+                    numbers[t]=true;
                 }
                 
             }
