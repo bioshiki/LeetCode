@@ -17,3 +17,6 @@ public:
         }
     }
 };
+/*
+Also could use binary search
+*/
